@@ -1,6 +1,6 @@
-package javaBasics.classStructure;
+package com.gmail.yeatz0408.javaBasics;
 
-public class Person {
+public class VariableAndMethod {
 
 	private String firstName;
 	private String lastName;

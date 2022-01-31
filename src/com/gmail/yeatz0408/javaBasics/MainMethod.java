@@ -1,10 +1,10 @@
-package javaBasics.classStructure;
+package com.gmail.yeatz0408.javaBasics;
 
-public class Main {
+public class MainMethod {
 	
 	public static void main(String[] args) {
 		
-		Person person = new Person();
+		VariableAndMethod person = new VariableAndMethod();
 		person.setFirstName("Noah");
 		person.setLastName("Jung");
 		person.setAge(30);

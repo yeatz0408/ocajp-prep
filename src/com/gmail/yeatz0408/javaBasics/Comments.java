@@ -1,4 +1,4 @@
-package javaBasics.classStructure;
+package com.gmail.yeatz0408.javaBasics;
 
 public class Comments {
 	
