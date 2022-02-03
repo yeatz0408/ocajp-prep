@@ -4,7 +4,10 @@ public class Operators {
 
 	public static void main(String[] args) {
 		
-		// Arithmetic operators
+		
+		/*
+		 * Arithmetic operators
+		 */
 		
 		int basics = 100 + 2 - 2 * 4 / 2;
 		int postIncrement = basics++;
@@ -17,8 +20,10 @@ public class Operators {
 		
 		
 		
-		// promotion
-  
+		/*
+		 * promotion 
+		 */
+		
   		int intPromo = 5;
   		double doublePromo = 5.55;
   		
@@ -34,8 +39,9 @@ public class Operators {
 
   		
   		
-  		
-  		// Unary Operators
+  		/*
+  		 * Unary Operators
+  		 */
   		
   		int positive = +10;
   		int negative = -10;
@@ -47,19 +53,18 @@ public class Operators {
   		boolean inverted = !invert;
   		 
   		 
-  		 // increment and decrement have higher order than (+-* /)
+  		// increment and decrement have higher order than (+-* /)
   		  		 
   		int newInt = 5;
-  		// System.out.println(20 / --newInt);
+//		 System.out.println(20 / --newInt);
   		
 
-  		
-  		
   		
   		/*
   		 Assignment operators
   		 */
   		// overflow and underflow
+  		
   		int x = (int) 1.0; // 1
   		short y = (short) 324892482; // 20473
   		int z = (int) 9.23f; // 9
