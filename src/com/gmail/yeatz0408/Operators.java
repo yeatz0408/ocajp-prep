@@ -131,12 +131,33 @@ public class Operators {
   		
   		
   		
-
+  		
+  		/*
+  		 * Equality operators and equals() method
+  		 */
+  		
+  		boolean xEqual = true;
+  		boolean yEqual = false;
+  		
+//  		System.out.println((yEqual = true) && (xEqual = false)); // false because (xEqual = false) is false. 
+//  		System.out.println((yEqual == true) && (xEqual == false)); // true;
 	
+  		Integer myInteger = 100;
+  		Integer anotherInteger = 100;
+  		
+//  		System.out.println(myInteger == anotherInteger);
+//  		System.out.println(myInteger = anotherInteger); // this is just assigning, not comparing
 	
-	
-	
-	
+  		myInteger = 128;
+  		anotherInteger = 128; // when reassigned a value (even the same number with the one compared), it creates another object
+  							  // unlike when it is constructed.
+  		
+//  		System.out.println(myInteger == anotherInteger );
+  		
+  		anotherInteger = myInteger;
+  		
+//  		System.out.println(anotherInteger == myInteger);
+//  		System.out.println(anotherInteger.equals(myInteger));
 	
 	
 	
