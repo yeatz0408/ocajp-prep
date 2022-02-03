@@ -105,6 +105,47 @@ public class Operators {
   		int mess = 4;
   		int mess2 = (mess = 2); // this is legal.
   		
+  		
+  		/*
+  		 * Relational Operators
+  		 */
+  		
+  		int relInt = 12;
+  		long relLong = 15L;
+  		double relDou = 14.5;
+  		
+  		boolean relBool = relInt < relLong && relDou < relLong; // this works because relInt and relLong gets promoted.
+  		
+  		
+  		/*
+  		 * Conditional Operators 
+  		 */
+  		
+  		// && || ^
+  		
+  		boolean xCondi = true, zCondi = false;
+  		int yCondi = 20;
+  		
+  		xCondi = (yCondi != 10) ^ (zCondi = false); // true, because (zCondi = false) simply reassigns 'false' to zCondi. 
+  													// (zCondi = false) isn't relational
+  		
+  		
+  		
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	}
 
 }
