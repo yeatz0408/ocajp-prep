@@ -34,16 +34,24 @@ public class Operators {
 
   		
   		
-  		/*
-  		 Unary Operators
+  		
+  		// Unary Operators
+  		
+  		int positive = +10;
+  		int negative = -10;
+  		 
+  		int postIncre = positive ++;
+  		int increment = ++positive;
+  		 
+  		boolean invert = false;
+  		boolean inverted = !invert;
   		 
   		 
-  		 
-  		 
-  		 
-
- 		*/
-
+  		 // increment and decrement have higher order than (+-* /)
+  		  		 
+  		int newInt = 5;
+  		// System.out.println(20 / --newInt);
+  		
 
 
 
