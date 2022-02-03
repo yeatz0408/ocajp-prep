@@ -160,9 +160,21 @@ public class Operators {
 //  		System.out.println(anotherInteger.equals(myInteger));
 	
 	
+  		/*
+  		 * comparing chars
+  		 */
 	
-	
-	
+  		char myChar = 65; // 65 = A
+  		char newChar = (char) (myChar + 1); // needs to be casted manually because char is also promoted to
+  		boolean charBool1 = newChar == 'B';
+  		boolean charBool2 = (++newChar >= 'C'); // true
+  		
+  		System.out.println(myChar);
+  		System.out.println(newChar);
+  		System.out.println(charBool1);
+  		System.out.println(charBool2);
+  		
+  		
 	
 	
 	
