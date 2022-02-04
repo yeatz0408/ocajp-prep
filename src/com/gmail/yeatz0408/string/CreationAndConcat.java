@@ -20,6 +20,15 @@ public class CreationAndConcat {
 		String hello = "hello";
 		String world = "world";
 		String helloWorld = hello + world;
+		
+		
+		// concat
+		String s1 = "1";
+		String s2 = s1.concat("2");
+		s2.concat("3");
+		
+		System.out.println(s1);
+		System.out.println(s2);
 
 	}
 
