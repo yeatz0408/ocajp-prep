@@ -31,6 +31,7 @@ class Dog2 {
 	}
 	
 	public void printDog() {
+//		this()  // this() cannot be used in methods but only in constructors
 		System.out.println(name + " " + breed);
 	}
 }
