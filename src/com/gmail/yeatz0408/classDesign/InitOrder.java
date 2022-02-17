@@ -4,9 +4,10 @@ package com.gmail.yeatz0408.classDesign;
 public class InitOrder {
 	
 //	The order is
-//			1. static initializer
-//			2. regular initializer (after all static intializer are executed)
-//			3. constructor
+//			1. Superclass
+//			2. static initializer
+//			3. regular initializer (after all static intializer are executed)
+//			4. constructor
 
 	public static void main(String[] args) {
 		new InitExample();
