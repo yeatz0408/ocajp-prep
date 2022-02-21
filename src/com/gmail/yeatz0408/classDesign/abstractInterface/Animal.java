@@ -1,6 +1,8 @@
-package com.gmail.yeatz0408.classDesign.abstractExamples;
+package com.gmail.yeatz0408.classDesign.abstractInterface;
 
-public abstract class Animal {
+public abstract class Animal implements Alive {
+	
+	boolean isAlive;
 
 	public abstract void eat();
 	
@@ -11,6 +13,12 @@ public abstract class Animal {
 	public void breathe() {
 		System.out.println("ÇÏ¾ÇÇÏ¾Ç");
 	}
+	
+	public void isAlive() {
+		System.out.println(isAlive);
+	}
+	
+	
 	
 //	public final abstract void cry();
 	
