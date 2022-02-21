@@ -28,6 +28,15 @@ class Human {
 		System.out.println("poop");
 	}
 	
+	// access modifier should broaden when overridden. Not the other way.
+	private void eat() {
+		System.out.println("Chickens");
+	}
+	
+//	public void run() {
+//		
+//	}
+	
 }
 
 class Soldier extends Human {
@@ -44,6 +53,15 @@ class Soldier extends Human {
 	public final void salute() {
 		System.out.println("Salute!");
 	}
+	
+	void eat() {
+		System.out.println("Rice");
+	}
+	
+//	you can't narrow down the access modifier when overriding
+//	protected void run() {
+//		
+//	}
 }
 
 class Archer extends Soldier {
@@ -59,6 +77,10 @@ class Archer extends Soldier {
 	
 	public void superSuperWork() {
 		super.superWork();
+	}
+	
+	protected void eat() {
+		System.out.println("worms");
 	}
 	
 //	public final void salute() {
