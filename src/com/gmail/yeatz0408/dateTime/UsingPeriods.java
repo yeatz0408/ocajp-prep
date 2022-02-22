@@ -11,10 +11,11 @@ public class UsingPeriods {
 		LocalDate end = LocalDate.of(2020, Month.APRIL, 30);
 		
 		Period period = Period.of(1, 1, 1);
+		Period period2 = Period.ofMonths(1);
 		System.out.println(period);
+		System.out.println(period2);
 		
 		cleanAnimalCage(start, end, period);
-
 	}
 	
 	public static void cleanAnimalCage(LocalDate start, LocalDate end) {
