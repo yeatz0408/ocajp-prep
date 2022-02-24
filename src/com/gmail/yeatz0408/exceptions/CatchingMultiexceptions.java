@@ -4,7 +4,11 @@ class MyException extends RuntimeException {};
 
 class MySuperException extends MyException {};
 
-public class CatchingMultiexceptions {
+interface ForExceptions{
+	public void fromInterface() throws MyException;
+}
+
+public class CatchingMultiexceptions implements ForExceptions {
 
 	public static void main(String[] args) {
 
@@ -25,6 +29,12 @@ public class CatchingMultiexceptions {
 		
 		System.out.println();
 		System.out.println(calculate());
+		
+		try {		
+			new CatchingMultiexceptions().fromInterface();
+		} catch (MyException e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -59,6 +69,12 @@ public class CatchingMultiexceptions {
 		}
 		
 		return result;
+	}
+
+	@Override
+	public void fromInterface() {
+		
+		throw new MySuperException();
 	}
 
 }
